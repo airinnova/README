@@ -93,7 +93,7 @@ Test cases defined with *PyTest* / *Tox* can be run locally. However, the code c
 4.4 Code coverage
 ~~~~~~~~~~~~~~~~~
 
-When testing with *pytest* it is possible to create a report which show which parts of the code base have been executed and which haven't. This can be a help in identifying parts of the code base which are not yet tested. To generate a *coverage report* with *pytest* a plug-in called *pytest-cov* can be used. Coverage results can also be displayed nicely on *Codecov.io*.
+When testing with *pytest* it is possible to create a report which shows which parts of the code base have been executed and which have not. This can be a help in identifying parts of the code base which are not yet tested. To generate a *coverage report* with *pytest* a plug-in called *pytest-cov* can be used. Coverage results can also be displayed nicely on *Codecov.io*.
 
 * *pytest-cov* https://pytest-cov.readthedocs.io/en/latest/
 * *Codecov.io* https://codecov.io/
@@ -121,7 +121,7 @@ A Python project can be packaged which makes it easy to install and distribute. 
 6.1 Python Package Index (PyPI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Packaged Python projects can be distributed using the *Python Package Index* (*PyPI*). This makes it possible to install a Python package by simple running ``pip install pkg_name``.
+Packaged Python projects can be distributed using the *Python Package Index* (*PyPI*). This makes it possible to install a Python package by simply running ``pip install pkg_name``.
 
 * https://pypi.org/
 * https://packaging.python.org/tutorials/packaging-projects/
@@ -149,7 +149,7 @@ Just beware that changing the interface of functions may affect the packages tha
 7.3 CPACS and Anaconda
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The use of *CPACS* requires two libraries developed by DLR, namely *Tigl* and *Tixi*. Unfortunately, these libraries are not available on the official Python Package Index (PyPI). Thus, they cannot be installed via the `requirements.txt` file. However, the DLR provided packages via *Anaconda* which creates its own environments separate from the standard Python virtual environments.
+The use of *CPACS* requires two libraries developed by DLR, namely *Tigl* and *Tixi*. Unfortunately, these libraries are not available on the official Python Package Index (PyPI). Thus, they cannot be installed via the ``requirements.txt`` file. However, the DLR provided packages via *Anaconda* which creates its own environments separate from the standard Python virtual environments.
 
 For testing and development, the use of *Tigl* and *Tixi* via *Anaconda* has proven itself to be the most reliable option. For testing on *Travis CI*, there is also a light-weight version of *Anaconda* called *Miniconda*.
 
@@ -158,4 +158,4 @@ For testing and development, the use of *Tigl* and *Tixi* via *Anaconda* has pro
 * **Anaconda** https://www.anaconda.com/
 * **Miniconda** https://docs.conda.io/en/latest/miniconda.html
 
-Currently, only **PyTornado** uses *Tigl* and *Tixi*. See the file ``environment.yml`` (Anaconda environment definition).
+Currently, only **PyTornado** uses *Tigl* and *Tixi*. See the file ``environment.yml`` (Anaconda environment definition analogous to ``requirements.txt``).
